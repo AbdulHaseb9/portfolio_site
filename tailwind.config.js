@@ -1,4 +1,6 @@
+
 /** @type {import('tailwindcss').Config} */
+const defaultTheme = require('tailwindcss/defaultTheme');
 export default {
   content: [
     "./index.html",
@@ -6,15 +8,13 @@ export default {
   ],
   theme: {
     extend: {
-      screens: {
-        large: "1440px",
-      },
       colors: {
-        bg_color: "#081B29",
-        primary_color: "#18A9EA",
-        secondary_color: "#122E43",
-        text_secondary_color: "#eaeaea",
+        primary: '#7B2DEE',
+        secondary: '#DDDDDD',
       },
+      backgroundImage: {
+        'hero-pattern': "url('/comingsoon_bg.png')",
+      }
     },
   },
   plugins: [],
