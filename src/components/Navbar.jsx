@@ -12,7 +12,7 @@ function Navbar() {
     const [sidebar, setSidebar] = useState(false)
     return (
         <>
-            <header className='w-full px-5 py-3 bg-secondary flex justify-between items-center z-10 fixed left-0 top-0 md:px-10 xl:px-20'>
+            <header className='w-full px-5 py-3 bg-secondary flex justify-between items-center z-10 fixed left-0 top-0 md:px-10 xl:px-20 max-w-[1600px]'>
                 {/* Logo/Name */}
                 <div className='flex items-center gap-3'>
                     <HiBars3BottomLeft className='text-2xl cursor-pointer md:hidden' onClick={() => setSidebar(!sidebar)} />
