@@ -3,5 +3,9 @@
   margin: 0;
   padding: 0;
   overflow: hidden;
-  background: #DDDDDD;
+  background: #dddddd;
+}
+
+.active {
+  color: #7b2dee;
 }

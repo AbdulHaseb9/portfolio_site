@@ -1,5 +1,5 @@
 import React, { useState } from 'react'
-import { Link } from 'react-router-dom'
+import { NavLink } from 'react-router-dom'
 import { HiBars3BottomLeft } from "react-icons/hi2";
 import { RxCross2 } from "react-icons/rx";
 import { FaXTwitter } from "react-icons/fa6";
@@ -22,11 +22,11 @@ function Navbar() {
                 </div>
                 {/* Nav Links */}
                 <nav className='text-sm font-semibold space-x-10 text-gray-800 hidden md:block'>
-                    <Link className='hover:text-primary'>Home</Link>
-                    <Link className='hover:text-primary'>About</Link>
-                    <Link className='hover:text-primary'>Projects</Link>
-                    {/* <Link className='hover:text-primary'>Blog</Link> */}
-                    <Link className='hover:text-primary'>Contact</Link>
+                    <NavLink to={'/'} className='hover:text-primary'>Home</NavLink>
+                    <NavLink to={'aboutme'} className='hover:text-primary'>About</NavLink>
+                    <NavLink to={'myprojects'} className='hover:text-primary'>Projects</NavLink>
+                    {/* <NavLink className='hover:text-primary'>Blog</NavLink> */}
+                    <NavLink to={'contactme'} className='hover:text-primary'>Contact</NavLink>
                 </nav>
                 {/* Social Links */}
                 <div className='hidden md:flex gap-x-3'>
@@ -44,11 +44,11 @@ function Navbar() {
                 </div>
                 {/* Center */}
                 <div className='flex flex-col items-center gap-y-6 my-10'>
-                    <Link>Home</Link>
-                    <Link>About</Link>
-                    <Link>Projects</Link>
-                    {/* <Link>Blog</Link> */}
-                    <Link>Contact</Link>
+                    <NavLink to={'/'} className='hover:text-primary'>Home</NavLink>
+                    <NavLink to={'aboutme'} className='hover:text-primary'>About</NavLink>
+                    <NavLink to={'myprojects'} className='hover:text-primary'>Projects</NavLink>
+                    {/* <NavLink className='hover:text-primary'>Blog</NavLink> */}
+                    <NavLink to={'contactme'} className='hover:text-primary'>Contact</NavLink>
                 </div>
                 {/* Bottom */}
                 <div className='flex justify-center gap-x-3'>
