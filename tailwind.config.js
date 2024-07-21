@@ -18,7 +18,10 @@ export default {
       },
       screens: {
         mobilelarge: '425px'
-      }
+      },
+      fontFamily: {
+        roman: ["Martian Mono, monospace"],
+      },
     },
   },
   plugins: [],
