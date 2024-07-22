@@ -13,7 +13,8 @@ export default function Contact() {
         </div>
         <textarea placeholder='Message' className='w-[290px] md:w-[600px] min-h-28 py-2 mt-4 text-sm bg-transparent outline-none border-b-2 border-primary placeholder:text-primary' required></textarea>
         <div className='flex justify-center my-3'>
-          <input type="submit" className='border-2 border-primary px-6 py-3 rounded-full block' />
+          {/* <input type="submit" className='border-2 border-primary px-6 py-3 rounded-full block' /> */}
+          <button type='submit' class="button-89" role="button">Submit</button>
         </div>
       </form>
     </div>
