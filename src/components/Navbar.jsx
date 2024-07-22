@@ -1,10 +1,11 @@
 import React, { useState } from 'react'
-import { NavLink } from 'react-router-dom'
+import { Link, NavLink } from 'react-router-dom'
 import { HiBars3BottomLeft } from "react-icons/hi2";
 import { RxCross2 } from "react-icons/rx";
 import { FaXTwitter } from "react-icons/fa6";
 import { FaFacebookF } from "react-icons/fa6";
 import { FaInstagram } from "react-icons/fa6";
+import { FaGithub } from "react-icons/fa6";
 // import { FaLinkedinIn } from "react-icons/fa";
 
 
@@ -30,9 +31,18 @@ function Navbar() {
                 </nav>
                 {/* Social Links */}
                 <div className='hidden md:flex gap-x-3'>
-                    <FaXTwitter className='p-2 text-primary text-4xl rounded-full hover:bg-primary hover:text-white cursor-pointer' />
-                    <FaFacebookF className='p-2 text-primary text-4xl rounded-full hover:bg-primary hover:text-white cursor-pointer' />
-                    <FaInstagram className='p-2 text-primary text-4xl rounded-full hover:bg-primary hover:text-white cursor-pointer' />
+                    <Link target='_blank' to={'https://x.com/Haseebsheikh23'}>
+                        <FaXTwitter className='p-2 text-primary text-4xl rounded-full hover:bg-primary hover:text-white cursor-pointer' />
+                    </Link>
+                    <Link target='_blank' to={'https://www.facebook.com/profile.php?id=100086119372055'}>
+                        <FaFacebookF className='p-2 text-primary text-4xl rounded-full hover:bg-primary hover:text-white cursor-pointer' />
+                    </Link>
+                    <Link target='_blank' to={'https://www.instagram.com/haseebsheikhofficial7/'}>
+                        <FaInstagram className='p-2 text-primary text-4xl rounded-full hover:bg-primary hover:text-white cursor-pointer' />
+                    </Link>
+                    <Link target='_blank' to={'https://github.com/AbdulHaseb9/'}>
+                        <FaGithub className='p-2 text-primary text-4xl rounded-full hover:bg-primary hover:text-white cursor-pointer' />
+                    </Link>
                     {/* <FaLinkedinIn className='p-2 text-primary text-4xl rounded-full hover:bg-primary hover:text-white cursor-pointer' /> */}
                 </div>
             </header>
@@ -44,17 +54,26 @@ function Navbar() {
                 </div>
                 {/* Center */}
                 <div className='flex flex-col items-center gap-y-6 my-10'>
-                    <NavLink to={'/'} className='hover:text-primary'>Home</NavLink>
-                    <NavLink to={'aboutme'} className='hover:text-primary'>About</NavLink>
-                    <NavLink to={'myprojects'} className='hover:text-primary'>Projects</NavLink>
+                    <NavLink to={'/'} onClick={() => setSidebar(false)} className='hover:text-primary'>Home</NavLink>
+                    <NavLink to={'aboutme'} onClick={() => setSidebar(false)} className='hover:text-primary'>About</NavLink>
+                    <NavLink to={'myprojects'} onClick={() => setSidebar(false)} className='hover:text-primary'>Projects</NavLink>
                     {/* <NavLink className='hover:text-primary'>Blog</NavLink> */}
-                    <NavLink to={'contactme'} className='hover:text-primary'>Contact</NavLink>
+                    <NavLink to={'contactme'} onClick={() => setSidebar(false)} className='hover:text-primary'>Contact</NavLink>
                 </div>
                 {/* Bottom */}
                 <div className='flex justify-center gap-x-3'>
-                    <FaXTwitter className='p-2 text-primary text-4xl rounded-full hover:bg-primary hover:text-white cursor-pointer' />
-                    <FaFacebookF className='p-2 text-primary text-4xl rounded-full hover:bg-primary hover:text-white cursor-pointer' />
-                    <FaInstagram className='p-2 text-primary text-4xl rounded-full hover:bg-primary hover:text-white cursor-pointer' />
+                    <Link target='_blank' to={'https://x.com/Haseebsheikh23'}>
+                        <FaXTwitter className='p-2 text-primary text-4xl rounded-full hover:bg-primary hover:text-white cursor-pointer' />
+                    </Link>
+                    <Link target='_blank' to={'https://www.facebook.com/profile.php?id=100086119372055'}>
+                        <FaFacebookF className='p-2 text-primary text-4xl rounded-full hover:bg-primary hover:text-white cursor-pointer' />
+                    </Link>
+                    <Link target='_blank' to={'https://www.instagram.com/haseebsheikhofficial7/'}>
+                        <FaInstagram className='p-2 text-primary text-4xl rounded-full hover:bg-primary hover:text-white cursor-pointer' />
+                    </Link>
+                    <Link target='_blank' to={'https://github.com/AbdulHaseb9/'}>
+                        <FaGithub className='p-2 text-primary text-4xl rounded-full hover:bg-primary hover:text-white cursor-pointer' />
+                    </Link>
                     {/* <FaLinkedinIn className='p-2 text-primary text-4xl rounded-full hover:bg-primary hover:text-white cursor-pointer' /> */}
                 </div>
             </div>
