@@ -8,6 +8,7 @@ import "aos/dist/aos.css"
 import './App.css'
 import Contact from './components/Contact'
 import Projects from './components/Projects'
+import Skills from './components/Skills'
 
 function App() {
   useEffect(() => {
@@ -23,6 +24,7 @@ function App() {
           <Route index element={<Hero />} />
           <Route path='aboutme' element={<Aboutme />} />
           <Route path='contactme' element={<Contact />} />
+          <Route path='myskills' element={<Skills />} />
           <Route path='myprojects' element={<Projects />} />
         </Route>
       </Routes>

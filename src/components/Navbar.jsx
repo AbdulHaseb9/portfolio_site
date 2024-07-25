@@ -1,5 +1,5 @@
 import React, { useState } from 'react'
-import { Link, NavLink } from 'react-router-dom'
+import { Link, NavLink, useNavigate } from 'react-router-dom'
 import { HiBars3BottomLeft } from "react-icons/hi2";
 import { RxCross2 } from "react-icons/rx";
 import { FaXTwitter } from "react-icons/fa6";
@@ -10,6 +10,7 @@ import { FaGithub } from "react-icons/fa6";
 
 
 function Navbar() {
+    const navigate = useNavigate()
     const [sidebar, setSidebar] = useState(false)
     return (
         <>
@@ -17,7 +18,7 @@ function Navbar() {
                 {/* Logo/Name */}
                 <div className='flex items-center gap-3'>
                     <HiBars3BottomLeft className='text-2xl cursor-pointer md:hidden' onClick={() => setSidebar(!sidebar)} />
-                    <h2 className='text-3xl font-bold tracking-widest flex items-center'>
+                    <h2 onClick={() => navigate('/')} className='text-3xl font-bold tracking-widest flex items-center cursor-pointer'>
                         <span className='text-primary'>Ha</span>seeb
                     </h2>
                 </div>

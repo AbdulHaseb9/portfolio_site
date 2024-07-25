@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 import { TypeAnimation } from 'react-type-animation'
 
 export default function Hero() {
@@ -21,7 +22,7 @@ export default function Hero() {
           repeat={Infinity}
         />
         <p className='md:w-7/12 lg:w-5/12 text-sm text-gray text-justify'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate, nulla. Minima quaerat possimus reiciendis labore numquam. Quis ea atque doloribus hic explicabo? Ea sapiente voluptates veniam numquam, ab est adipisci.</p>
-        <button data-aos="fade-right" className='bg-primary text-white px-4 py-2 rounded-md my-3 border-primary border-2 hover:bg-transparent hover:text-primary'>Hire Me</button>
+        <Link to={'myskills'} data-aos="fade-right" className='bg-primary text-white px-4 py-2 rounded-md my-3 border-primary border-2 hover:bg-transparent hover:text-primary'>My Skills</Link>
         <button data-aos="fade-left" className='bg-primary text-white px-4 py-2 rounded-md my-3 mx-3 border-primary border-2 hover:bg-transparent hover:text-primary'>Download CV</button>
       </div>
       <div className='text-7xl text-[#aeaeae] tracking-widest hidden md:block absolute -right-40 md:bottom-52 lg:bottom-60 xl:bottom-72 -rotate-90'>
