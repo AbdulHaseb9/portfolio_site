@@ -6,6 +6,7 @@ import Hero from "./Pages/Hero";
 import Contact from "./Pages/Contact";
 import Projects from "./Pages/Projects";
 import Skills from "./Pages/Skills";
+import Error from "./Pages/Error";
 import Aos from "aos";
 import "aos/dist/aos.css";
 import "./App.css";
@@ -26,6 +27,7 @@ function App() {
           <Route path="contactme" element={<Contact />} />
           <Route path="myskills" element={<Skills />} />
           <Route path="myprojects" element={<Projects />} />
+          <Route path="*" element={<Error />} />
         </Route>
       </Routes>
     </>

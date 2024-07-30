@@ -33,12 +33,8 @@ export default function Hero() {
           className="text-2xl md:text-3xl font-bold inline-block my-3"
           repeat={Infinity}
         />
-        <p className="md:w-7/12 lg:w-5/12 text-sm text-gray text-justify">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate,
-          nulla. Minima quaerat possimus reiciendis labore numquam. Quis ea
-          atque doloribus hic explicabo? Ea sapiente voluptates veniam numquam,
-          ab est adipisci.
-        </p>
+        <p className="md:w-7/12 lg:w-5/12 text-sm fonsem text-gray text-justify">
+          I am a passionate and dedicated software developer with 4 months of internship experience and 7 months as a MERN stack instructor. I thrive on learning and building dynamic web applications, always eager to explore new technologies and challenges.</p>
         <Link
           to={"myskills"}
           data-aos="fade-right"
