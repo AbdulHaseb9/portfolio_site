@@ -1,3 +1,4 @@
+import hase from "/portfolio1.jpg";
 export const mywork = [
   {
     name: "Modern Dashboard",

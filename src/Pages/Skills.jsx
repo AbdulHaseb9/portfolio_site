@@ -16,6 +16,7 @@ import netlify from "/skills/netlify.png";
 import figma from "/skills/figma.png";
 
 export default function Skills() {
+
   const skills = [
     {
       image: reactjs,

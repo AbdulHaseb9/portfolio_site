@@ -14,7 +14,8 @@ function Navbar() {
     const [sidebar, setSidebar] = useState(false)
     return (
         <>
-            <header className='w-full px-5 py-3 bg-secondary flex justify-between items-center z-10 fixed left-0 top-0 md:px-10 xl:px-20 max-w-[1600px]'>
+            {/* Header */}
+            <header className='w-full px-5 py-3 bg-secondary flex justify-between items-center z-50 fixed left-0 top-0 md:px-10 xl:px-20 max-w-[1600px]'>
                 {/* Logo/Name */}
                 <div className='flex items-center gap-3'>
                     <HiBars3BottomLeft className='text-2xl cursor-pointer md:hidden' onClick={() => setSidebar(!sidebar)} />
@@ -48,7 +49,7 @@ function Navbar() {
                 </div>
             </header>
             {/* Side Bar */}
-            <div className={`h-screen w-full p-6 bg-secondary transition-all duration-500 absolute top-0 ${sidebar ? `left-0` : `-left-full`} z-50`}>
+            <div className={`h-screen w-full p-6 bg-secondary transition-all duration-500 fixed top-0 ${sidebar ? `left-0` : `-left-full`} z-50`}>
                 {/* Top */}
                 <div className={`flex justify-end text-2xl p-2`}>
                     <RxCross2 onClick={() => setSidebar(false)} />

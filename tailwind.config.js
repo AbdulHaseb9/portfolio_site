@@ -15,6 +15,7 @@ export default {
       backgroundImage: {
         'hero-pattern': "url('/comingsoon_bg.png')",
         'profile-image': "url('/profile_pic.png')",
+        'profile-pic': "url('/profile_pic2.jpeg')",
       },
       screens: {
         mobilelarge: '425px'

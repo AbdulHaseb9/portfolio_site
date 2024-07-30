@@ -1,12 +1,12 @@
 import { useEffect } from "react";
 import { Route, Routes } from "react-router-dom";
-import Aboutme from "./components/Aboutme";
+import Aboutme from "./Pages/Aboutme";
 import Navbar from "./components/Navbar";
-import Hero from "./components/Hero";
+import Hero from "./Pages/Hero";
+import Contact from "./Pages/Contact";
+import Projects from "./Pages/Projects";
+import Skills from "./Pages/Skills";
 import Aos from "aos";
-import Contact from "./components/Contact";
-import Projects from "./components/Projects";
-import Skills from "./components/Skills";
 import "aos/dist/aos.css";
 import "./App.css";
 
