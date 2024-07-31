@@ -30,7 +30,7 @@ export default function Projects() {
         </button>
         <button
           onClick={() => setProjects('fullstack')}
-          className={`px-4 py-2 rounded-md border-primary border-2 ${projects == 'react' ? `bg-transparent text-primary ` : `bg-primary text-white`}`}
+          className={`px-4 py-2 rounded-md border-primary border-2 ${projects == 'fullstack' ? `bg-transparent text-primary ` : `bg-primary text-white`}`}
         >
           Full Stack Apps
         </button>
@@ -40,7 +40,7 @@ export default function Projects() {
         {projects == 'all' ?
           mywork.map((item, index) => (
             <div
-              className="md:h-56 lg:h-64 flex flex-col rounded-lg bg-white dark:text-white md:max-w-xl md:flex-row"
+              className="md:h-56 lg:h-72 flex flex-col rounded-lg bg-white/55 md:max-w-xl md:flex-row"
               key={index}>
               <img
                 className="h-48 w-full rounded-t-lg object-top object-cover md:h-auto md:w-4/12 md:!rounded-none md:!rounded-s-lg"
@@ -48,12 +48,12 @@ export default function Projects() {
                 alt={item.name} />
               <div className="flex flex-col justify-start p-6 md:w-8/12">
                 <h5 className="mb-2 text-xl font-medium text-black">{item.name}</h5>
-                <p className="mb-4 text-sm text-gray">{item.description}</p>
+                <p className="mb-4 text-sm text-gray text-justify">{item.description}</p>
                 <div className="flex flex-wrap">
                   {item.technologies.map((tech, techIndex) => (
                     <span
                       key={techIndex}
-                      className="text-xs text-gray m-1 rounded-full"
+                      className="text-xs text-primary m-1 rounded-full"
                     // className="text-xs bg-primary text-secondary p-1 m-1 rounded-full"
                     >
                       {tech + ' ,'}

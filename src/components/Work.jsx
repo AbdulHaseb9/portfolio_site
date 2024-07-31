@@ -10,15 +10,15 @@ export const mywork = [
     name: "Abrothers",
     image: abothers,
     description:
-      "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Numquam voluptate repudiandae velitconsectetur adipisicing elit. Numquam voluptate repudiandae velit praesentium nam ab.",
-    technologies: ['React + Vite', 'Tailwindcss', 'Redux Toolkit', 'MongoDb'],
+      "Developed a fast, modern e-commerce website using React with Vite, TailwindCSS, and Redux Toolkit. The site includes user authentication, product listings, a shopping cart, and a checkout process, enhanced with React Router DOM for navigation and React Hot Toast for notifications.",
+    technologies: ['React + Vite', 'Tailwindcss', 'Redux Toolkit', 'MongoDb', 'Express JS', 'Node JS', 'bcrypt', 'jwt', 'npm packages',],
     type: 'fullstack',
   },
   {
     name: "Wise Market",
     image: wise_market,
     description:
-      "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Numquam voluptate repudiandae velitconsectetur adipisicing elit. Numquam voluptate repudiandae velit praesentium nam ab.",
+      "Created a responsive homepage clone of a popular e-commerce site using React with Vite, TailwindCSS, and Redux Toolkit. Features include a featured products section and user-friendly navigation, enhanced with React Router DOM.",
     technologies: ['React + Vite', 'Tailwindcss', 'Redux Toolkit', 'MongoDb'],
     type: 'react',
   },
