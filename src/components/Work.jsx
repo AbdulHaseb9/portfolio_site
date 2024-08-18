@@ -2,7 +2,7 @@ import dyssey_cosmoc from "/projects/dyssey-cosmoc.png";
 import logo_ipsum from "/projects/logo-ipsum.png";
 import hoo_bank from "/projects/hoo-bank.png";
 import wise_market from "/projects/wise-market.png";
-import abothers from "../../public/projects/abrothers.png";
+import abothers from "/projects/abrothers.png";
 
 export const mywork = [
   {
