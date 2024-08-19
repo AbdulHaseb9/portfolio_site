@@ -3,6 +3,9 @@ import logo_ipsum from "/projects/logo-ipsum.png";
 import hoo_bank from "/projects/hoo-bank.png";
 import wise_market from "/projects/wise-market.png";
 import abothers from "/projects/abrothers.png";
+import weatherupdated from "/projects/weatherupdate.png";
+import tictactoe from "/projects/tictactoe.png";
+import calculator from "/projects/calculator.png";
 
 export const mywork = [
   {
@@ -59,5 +62,32 @@ export const mywork = [
     technologies: ["React + Vite", "Tailwindcss", "Redux Toolkit", "MongoDb"],
     type: "react",
     href: "https://logoipsumweb.netlify.app/",
+  },
+  {
+    name: "Weather Updated",
+    image: weatherupdated,
+    description:
+      "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Numquam voluptate repudiandae velitconsectetur adipisicing elit. Numquam voluptate repudiandae velit praesentium nam ab.",
+    technologies: ["Html5", "CSS3", "Javascript"],
+    type: "javascript",
+    href: "https://abdulhaseb9.github.io/Weatherupdated/",
+  },
+  {
+    name: "Tic Tac Toe",
+    image: tictactoe,
+    description:
+      "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Numquam voluptate repudiandae velitconsectetur adipisicing elit. Numquam voluptate repudiandae velit praesentium nam ab.",
+    technologies: ["Html5", "CSS3", "Javascript"],
+    type: "javascript",
+    href: "https://abdulhaseb9.github.io/tic-tac-toe/",
+  },
+  {
+    name: "Calculator",
+    image: calculator,
+    description:
+      "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Numquam voluptate repudiandae velitconsectetur adipisicing elit. Numquam voluptate repudiandae velit praesentium nam ab.",
+    technologies: ["Html5", "CSS3", "Javascript"],
+    type: "javascript",
+    href: "https://abdulhaseb9.github.io/calculator/",
   },
 ];

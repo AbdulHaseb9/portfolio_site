@@ -62,7 +62,7 @@ export default function Projects() {
                 key={index}
               >
                 <img
-                  className="h-48 w-full rounded-t-lg object-top object-cover md:h-auto md:w-4/12 md:!rounded-none md:!rounded-s-lg"
+                  className="h-48 w-full rounded-t-lg object-top object-cover md:h-auto md:w-4/12 md:!rounded-none md:!rounded-s-lg mix-blend-multiply"
                   src={item.image}
                   alt={item.name}
                 />
@@ -98,7 +98,7 @@ export default function Projects() {
                   key={index}
                 >
                   <img
-                    className="h-48 w-full rounded-t-lg object-top object-cover md:h-auto md:w-4/12 md:!rounded-none md:!rounded-s-lg"
+                    className="h-48 w-full rounded-t-lg object-top object-cover md:h-auto md:w-4/12 md:!rounded-none md:!rounded-s-lg mix-blend-multiply"
                     src={item.image}
                     alt={item.name}
                   />
@@ -106,7 +106,9 @@ export default function Projects() {
                     <h5 className="mb-2 text-xl font-medium text-black">
                       {item.name}
                     </h5>
-                    <p className="mb-4 text-sm text-gray text-justify">{item.description}</p>
+                    <p className="mb-4 text-sm text-gray text-justify">
+                      {item.description}
+                    </p>
                     <div className="flex flex-wrap">
                       {item.technologies.map((tech, techIndex) => (
                         <span
